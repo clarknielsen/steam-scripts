@@ -11,8 +11,7 @@ for (let key in g_rgAppInfo) {
     fetch("remove/", {
       method: "POST",
       credentials: "same-origin", // for cookie
-      body: new URLSearchParams(`appid=${appid}&sessionid=${g_sessionID
-      }`)
+      body: new URLSearchParams(`appid=${appid}&sessionid=${g_sessionID}`)
     }).then(function() {
       console.log(`${game.name} removed`);
     });
