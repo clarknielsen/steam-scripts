@@ -6,4 +6,6 @@ Run these in your developer console on the Steam website to easily scrape and co
 
 [gems.js](gems.js) - Use on your inventory page to see which card sets are worth the most gems.
 
+[search.js](search.js) - Use on any page to open tabs for all new (non-free, non-VR) games in the past day.
+
 [wishlist.js](wishlist.js) - Use on your wishlist page to automatically remove any games that are no longer for sale or have a "very negative" rating.
