@@ -9,13 +9,16 @@ function searchEmUp(page) {
       let games = doc.querySelectorAll("a.search_result_row");
       let foundOne = false;
 
+      let today = new Date();
+
       for (let i = 0; i < games.length; i++) {
         // check for games that aren't free and aren't VR
         if (games[i].querySelector(".col.search_price").textContent.indexOf("$") !== -1 && !games[i].querySelector(".platform_img.hmd_separator")) {
-          // check date
-          let release = new Date(games[i].querySelector(".col.search_released").textContent);
+          // format release date
+          let release = new Date(`${games[i].querySelector(".col.search_released").textContent} ${today.getHours()}:${today.getMinutes()}:00`);
 
-          if (new Date().getTime() - new Date(release).getTime() <= 24 * 60 * 60 * 1000) {
+          // and compare to today (one day ago)
+          if (today.getTime() - release.getTime() <= 24 * 60 * 60 * 1000) {
             foundOne = true;
 
             // open in new tab
