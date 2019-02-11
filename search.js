@@ -22,7 +22,9 @@ function searchEmUp(page) {
             foundOne = true;
 
             // open in new tab
-            window.open(games[i].getAttribute("href"));
+            setTimeout(() => {
+              window.open(games[i].getAttribute("href"))
+            }, i*500);
           }
         }
       }
