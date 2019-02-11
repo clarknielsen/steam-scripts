@@ -23,7 +23,7 @@ function searchEmUp(page) {
 
             // open in new tab
             setTimeout(() => {
-              window.open(games[i].getAttribute("href"))
+              window.open(games[i].getAttribute("href"));
             }, i*500);
           }
         }
