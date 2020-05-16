@@ -6,9 +6,11 @@ Run these in your developer console on the Steam website to easily scrape and co
 
 [gems.js](gems.js) - Use on your inventory page to see which card sets are worth the most gems.
 
-[prices.js](prices.js) - Use on your inventory page to see which of your cards have sold for 10 cents or more on the marketplace.
+[library.js](library.js) - Use on the "All Games" tab in your profile to audit which games have been de-listed.
 
 [market.js](market.js) - Use on any marketplace page to remove old listings that are higher than the current lowest price.
+
+[prices.js](prices.js) - Use on your inventory page to see which of your cards have sold for 10 cents or more on the marketplace.
 
 [search.js](search.js) - Use on any page to open tabs for all new (non-free, non-VR) games in the past day (currently buggy).
 
