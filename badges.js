@@ -30,7 +30,7 @@ for (let i = 0; i < badges.length; i++) {
       let doc = new DOMParser().parseFromString(data, "text/html");
 
       // find link to "buy remaining" page and scrape it
-      let url = doc.querySelector(".badge_cards_to_collect .gamecards_inventorylink a").getAttribute("href").replace("steamcommunity-a.akamaihd.net", "steamcommunity.com");
+      let url = doc.querySelector(".badge_cards_to_collect .gamecards_inventorylink a").getAttribute("href").replace("community.akamai.steamstatic.com", "steamcommunity.com");
 
       fetch(url, {
         credentials: "same-origin"
