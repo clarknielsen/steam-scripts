@@ -1,4 +1,4 @@
-fetch("https://steamcommunity.com/inventory/" + g_steamID + "/753/6?l=english&count=5000", {
+fetch("https://steamcommunity.com/inventory/" + g_steamID + "/753/6?l=english&count=2000", {
   credentials: "same-origin" // for cookie
 }).then(function(response) {
   response.json().then(function(data) {
